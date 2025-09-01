@@ -21,34 +21,31 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            background-color: black;
         }
         .content-container {
             flex-grow: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            margin-top: 20px; /* Shifts GIF down a bit */
+            justify-content: flex-start;
+            margin-top: 80px; /* 80px spacing from logo to GIF */
         }
     </style>
 </head>
-<body class="bg-black">
+<body>
     <!-- Header with Logo -->
     <header class="py-4 flex justify-center">
         <img src="logo.png.png" alt="Zypher Logo" class="w-[197px] h-[79px]">
     </header>
 
-    <!-- Main Content with Highlighted T-shirt GIF and Coming Soon -->
+    <!-- Main Content with Highlighted T-shirt GIF and Text -->
     <div class="content-container">
-        <div class="w-[309px] h-[309px] overflow-hidden mb-4">
+        <div class="w-[309px] h-[309px] overflow-hidden">
             <img src="tshirt.gif" alt="T-shirt GIF" class="w-full h-full object-cover highlight">
         </div>
-        <p class="text-14px blink font-light text-white text-center">COMING SOON...</p>
+        <p class="text-10px blink font-light text-white text-center mt-2">COMING SOON...</p>
+        <p class="text-20px font-bold text-white text-center mt-50px">ZYPHER© 2025</p> <!-- 50px spacing from COMING SOON -->
     </div>
-
-    <!-- Footer with ZYPHER Text -->
-    <footer class="py-4 text-white text-center">
-        <p class="text-20px font-bold">ZYPHER© 2025</p>
-    </footer>
 </body>
 </html>
